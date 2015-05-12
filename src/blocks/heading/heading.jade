@@ -4,3 +4,5 @@ mixin heading(className, title, subtitle)
 		.heading__subtitle
 			span.heading__subtitle-text!= subtitle
 		+order-btn('heading__btn', 'Забронировать')
+		.header__order-form
+			+order-form('mfp-hide')

@@ -1,0 +1,50 @@
+mixin order-form(className)
+	form.order-form(class=className, action="", method="POST", onclick='return {"orderForm": {}}').js-widget
+		.order-form__row._row-1
+			.order-form__col
+				.order-form__field
+					input.order-form__input._fullname(type="text")
+					label.order-form__label(for="") Фамилия, Имя, Отчество
+			.order-form__col
+				.order-form__field._medium._inline
+					input.order-form__input._airplane(type="text")
+					label.order-form__label(for="") Номер рейса
+				.order-form__field._medium._inline
+					input.order-form__input._calendar(type="text")
+					label.order-form__label(for="") Дата вылета
+		.order-form__row._row-2
+			.order-form__col
+				.order-form__field
+					input.order-form__input._phone(type="text")
+					label.order-form__label(for="") Номер телефона
+			.order-form__col
+				.order-form__field
+					.order-form__select
+						select
+							option(value="") Салон «Персей», Терминал C
+							option(value="") Салон «Галактика», Терминал E
+							option(value="") Салон «Classic Lounge», Терминал F
+							option(value="") Салон «Звёздный», Терминал F
+		.order-form__row._row-3
+			.order-form__col
+				.order-form__field
+					input.order-form__input._email(type="text")
+					label.order-form__label(for="") Электропочта
+			.order-form__col
+				.order-form__field._visitors
+					label.order-form__label._inline Посетители старше 12 лет
+					input.order-form__input._number(type="text", placeholder="1")
+				.order-form__field._visitors
+					label.order-form__label._inline Дети от 5 до 12 лет
+					input.order-form__input._number(type="text", placeholder="0")
+		.order-form__row._row-4
+			.order-form__col
+				.order-form__discount
+			.order-form__col
+				.order-form__field
+					span.order-form__price._discount_no 2500
+				.order-form__field
+					span.order-form__price._discount_yes 2500
+					button.order-form__btn(type="button")
+				.order-form__field
+					span.order-form__label._tip Предварительная стоимость посещения

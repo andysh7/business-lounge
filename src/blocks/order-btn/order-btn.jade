@@ -1,2 +1,2 @@
 mixin order-btn(className, title)
-	button.btn.order-btn(type="buttom", class=className)= title
+	button.btn.order-btn(data-mfp-src=".order-form", onclick='return {"orderBtn": {}}', type="button", class=className).js-widget= title
