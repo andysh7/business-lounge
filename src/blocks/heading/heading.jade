@@ -1,0 +1,6 @@
+mixin heading(className, title, subtitle)
+	.heading(class=className)
+		.heading__title= title
+		.heading__subtitle
+			span.heading__subtitle-text!= subtitle
+		+order-btn('heading__btn', 'Забронировать')

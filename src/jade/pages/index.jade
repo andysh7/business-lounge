@@ -1,0 +1,35 @@
+extends ../layouts/index
+block content
+	section.section._info
+		.section__wrapper.page__wrapper
+			.section__heading
+				h1.section__title Бизнес-Залы
+				h2.section__subtitle В Шереметьево
+			.section__content
+				p 
+					| Вот уже 19 лет наша компания является надежным помощником для тех, кто хочет ощутить
+					| европейское качество и повышенный комфорт при вылете из международного аэропорта 
+					| Шереметьево и по возвращению обратно.
+				p
+					| Желаем Вам приятного полета и до встречи!
+	section.section._lounge
+		.section__wrapper.page__wrapper
+			+lounge-grid
+	section.section._star
+		.section__wrapper.page__wrapper
+			.section__heading
+				h1.section__title VIP-залы
+				h2.section__subtitle В Шереметьево
+			.section__content
+				p 
+					| VIP-International обладает эксклюзивным правом на обслуживание вылета и прилета 
+					| авиапассажиров в VIP-залах в терминалах D, E, F, международного аэропорта 
+					| «Шереметьево», что позволяет гарантировать Вам удобство и высочайший уровень 
+					| обслуживания.
+			a.section__link.r-link(href="#") Перейти на сайт услуги
+	section.section._contacts
+		.section__wrapper.page__wrapper
+			+contacts('section__contacts')
+		.section__content
+			+map
+		//+contacts

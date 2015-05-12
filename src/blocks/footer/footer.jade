@@ -1,0 +1,15 @@
+mixin footer(className)
+	.footer(class=className)
+		.footer__row
+			.footer__col
+				i.footer__plane
+			.footer__col
+				a.footer__link.r-link._white._footer(href="#") Табло Шереметьево
+				a.footer__link.r-link._white._footer(href="#") Вход для партнеров
+		.footer__row
+			.footer__col
+				.footer__contacts
+					.footer__phone +7 (495) <strong> 981-0909 </strong>
+					.footer__address 105062, Москва, ул. Покровка, д.47А
+			.footer__col
+				+search-field('footer__search')

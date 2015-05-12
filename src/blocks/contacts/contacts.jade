@@ -1,0 +1,23 @@
+mixin contacts(className)
+	.contacts(class=className)
+		.contacts__title Контакты
+		.contacts__section._phone
+			.contacts__subtitle Телефон
+			.contacts__phone +7 (495) <strong>981-0909</strong>
+			.contacts__desc круглосуточно
+		.contacts__section._contracts
+			.contacts__subtitle Договорной отдел:
+			.contacts__phone +7 (495) <strong> 788-7357 </strong>
+			.contacts__desc режим работы с 9.00 до 17.30
+		.contacts__section._address
+			.contacts__subtitle Наш адрес:
+			.contacts__text 
+				| 105062, Москва,
+				br
+				| <strong> ул. Покровка, д.47А </strong>
+		a.contacts__btn-email(href="mailto:contact@businesszal.ru")
+
+
+
+
+

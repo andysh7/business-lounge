@@ -1,0 +1,63 @@
+.footer {
+	min-height: 235px;
+	background-color: #336699;
+	color: #fff;
+	padding-bottom: 52px;
+
+	&__plane {
+		display: inline-block;
+		background: url('@{imagesPath}/plane.png') no-repeat;
+		background-size: contain;
+		width: 187px;
+		height: 78px;
+		vertical-align: bottom;
+	}
+
+	&__row {
+		font-size: 0;
+		margin-bottom: 47px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__col {
+		display: inline-block;
+		vertical-align: bottom;
+		font-size: 14px;
+
+		&:first-child {
+			width: 479px;
+			margin-right: 20px;
+		}
+	}
+
+	&__contacts {
+		padding-left: 2px;
+		line-height: 28px;
+	}
+
+	&__phone {
+		font-size: 22px;
+		margin-bottom: 2px;
+	}
+
+	&__address {
+		font-size: 16px;
+		font-weight: 300;
+	}
+
+	&__link {
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__search {
+		position: relative;
+		top: -9px;
+	}
+}

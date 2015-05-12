@@ -1,0 +1,67 @@
+.contacts {
+	width: 351px;
+	color: #fff;
+	background-color: #FFDB27;
+	padding: 23px 25px 36px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: normal;
+
+	&__title {
+		font-size: 63px;
+		color: #FFFFFF;
+		text-align: center;
+		font-family: @fontFamilyBebas;
+		font-weight: 700;
+		border-bottom: 8px solid #fff;
+		margin-bottom: 20px;
+		padding: 5px 0 10px;
+	}
+
+	&__subtitle {
+		font-size: 22px;
+		font-weight: 700;
+		margin-bottom: 3px;
+	}
+
+	&__section {
+		margin-bottom: 20px;
+
+		&._phone {
+			margin-bottom: 16px;
+		}
+
+		&._contracts {
+			margin-bottom: 26px;
+		}
+
+		&._address {
+			font-size: 17px;
+			margin-bottom: 32px;
+		}
+	}
+
+	&__phone {
+		font-size: 22px;
+	}
+
+	&__desc {
+	}
+
+	&__btn-email {
+		display: inline-block;
+		background: url('@{imagesPath}/email.png') no-repeat;
+		width: 118px;
+		height: 71px;
+		opacity: 0.6;
+		transition: all 0.3s ease;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&._blue {
+		background-color: #66ccff;
+	}
+}

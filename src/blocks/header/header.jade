@@ -1,0 +1,12 @@
+mixin header()
+	.header
+		.header__wrapper.page__wrapper
+			+logo('header__logo')
+			+menu('header__menu')
+			+heading('header__heading', 'С нами вы как дома', 'Бизнес-залы в Шереметьево: +7 (495) <strong>981-0909</strong>')
+			+lounge-nav('header__nav')
+		.header__background
+			video.header__video(width='100%', poster='/images/posters/', preload='auto', autoplay='true', loop='loop')
+				source(src='/images/posters/video.mov', type='video/webm')
+				source(src='/images/posters/video.mov', type='video/mp4')
+			.header__poster(data-image="/images/posters/1.jpg")

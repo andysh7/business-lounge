@@ -1,0 +1,37 @@
+.lounge-nav {
+	font-family: @fontFamilySans;
+	font-weight: 400;	
+	line-height: 19px;
+	display: inline-block;
+	font-size: 0;
+	margin-bottom: 25px;
+
+	&__link {
+		display: inline-block;
+		border-bottom: 8px solid #fff;
+		font-size: 17px;
+		text-decoration: none;
+		color: #fff;
+		height: 65px;
+		width: 242px;
+		padding: 26px 0 0;
+		text-align: center;
+		transition: all 0.4s ease;
+
+		&._green:hover {
+			border-color: #00CC00;
+		}
+
+		&._violet:hover {
+			border-color: #CC33FF;
+		}
+
+		&._red:hover {
+			border-color: #CC0000;
+		}
+
+		&._orange:hover {
+			border-color: #FF6600;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+doctype
+html(lang="ru")
+	head
+		include ../_mixins
+		include ../partial/head
+	body.page
+		.page__outer
+			.page__header
+				+header
+			.page__content
+				block content
+			.page__footer
+				.page__wrapper
+					+footer
+		script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU")
+		script(src="./js/main.js")
