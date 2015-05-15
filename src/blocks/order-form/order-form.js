@@ -14,7 +14,7 @@
         _initEvents: function () {
             this._on(this.$submitBtn, {
                 'click': function(e) {
-                    console.log('button clicked');
+                    //console.log('button clicked');
                 }
             });
 
@@ -23,9 +23,9 @@
                 'submit': function(e) {
                     e.preventDefault();
 
-                    console.log('form submited');
+                    //console.log('form submited');
 
-                    // do some stuff here...
+                    // do some epic stuff here...
                 }
             });
         },

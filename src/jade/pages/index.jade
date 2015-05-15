@@ -12,7 +12,11 @@ block content
 					| Шереметьево и по возвращению обратно.
 				p
 					| Желаем Вам приятного полета и до встречи!
-	section.section._lounge
+	section.section._lounge(onclick='return {"section": {}}').js-widget
+		.section__background
+			video.section__video(poster='./images/posters/lounge-main.jpg', preload='metadata', autoplay='true', loop='loop')
+				source(src='./images/posters/video_lounge.webm', type='video/webm')
+				source(src='./images/posters/video_lounge.mp4', type='video/mp4')
 		.section__wrapper.page__wrapper
 			+lounge-grid
 	section.section._star

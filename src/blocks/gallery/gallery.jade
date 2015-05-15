@@ -1,0 +1,23 @@
+mixin gallery(className)
+	.gallery(onclick='return {"gallery": {}}', class=className).js-widget
+		.gallery__main
+			.gallery__photos
+				a.gallery__image-link(href="./images/photos/0.jpg")
+					img.gallery__image(src="./images/photos/0.jpg", width="625", height="401", alt="")
+				a.gallery__image-link(href="./images/photos/1.jpg")
+					img.gallery__image(src="./images/photos/1.jpg", width="625", height="401", alt="")
+				a.gallery__image-link(href="./images/photos/2.jpg")
+					img.gallery__image(src="./images/photos/2.jpg", width="625", height="401", alt="")
+				a.gallery__image-link(href="./images/photos/3.jpg")
+					img.gallery__image(src="./images/photos/3.jpg", width="625", height="401", alt="")
+			.gallery__info
+				+infoblock('section__infoblock _green')
+		.gallery__nav
+			.gallery__nav-item
+				img.gallery__preview(src="./images/photos/0.jpg", width="60", height="45", alt="")
+			.gallery__nav-item
+				img.gallery__preview(src="./images/photos/1.jpg", width="60", height="45", alt="")
+			.gallery__nav-item
+				img.gallery__preview(src="./images/photos/2.jpg", width="60", height="45", alt="")
+			.gallery__nav-item
+				img.gallery__preview(src="./images/photos/3.jpg", width="60", height="45", alt="")

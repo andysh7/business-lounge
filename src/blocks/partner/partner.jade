@@ -1,0 +1,6 @@
+mixin partner(className, logoPath, text)
+	a.partner(class=className, href="http://yandex.ru", target="_blank")
+		.partner__card._front
+			img.partner__logo(src=logoPath, alt="")
+		.partner__card._back
+			.partner__text!= text

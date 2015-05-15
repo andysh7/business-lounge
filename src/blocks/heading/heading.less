@@ -3,12 +3,20 @@
 	text-align: center;
 	margin-bottom: 42px;
 
+	&__inner {
+		display: inline-block;
+		overflow: hidden;
+	}
 	&__title {
 		font-size: 99px;
 		font-family: @fontFamilyBebas;
 		font-weight: 700;
 		letter-spacing: 2px;
 		line-height: 119px;
+		max-width: 1000px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
 	}
 
 	&__subtitle {
@@ -23,22 +31,25 @@
 			display: inline-block;
 			vertical-align: middle;
 			width: 440px;
-		}
 
-		&:before, &:after {
-			content: '';
-			display: inline-block;
-			width: 135px;
-			height: 2px;
-			background-color: #FFFFFF;
-			position: relative;
-			vertical-align: middle;
-		}
+			&:before, &:after {
+				content: '';
+				display: inline-block;
+				width: 430px;
+				height: 2px;
+				background-color: #FFFFFF;
+				position: absolute;
+				top: 50%;
+				margin-top: -1px;
+			}
 
-		&:before {
-		}
+			&:before {
+				transform: translateX(-105%);
+			}
 
-		&:after {
+			&:after {
+				transform: translateX(5%);
+			}
 		}
 	}
 

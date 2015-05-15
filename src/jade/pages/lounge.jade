@@ -1,0 +1,30 @@
+extends ../layouts/lounge
+block content
+	section.section._page
+		.section__wrapper.page__wrapper
+			.section__heading
+				h1.section__title Classic Lounge
+				h2.section__subtitle Терминал F
+				span.section__description Зал расположен на 3 этаже терминала F Шереметьево, на балконе напротив выхода 3.
+			.section__content
+				.section__col 
+					p 
+						| Зал можно посетить после прохождения таможни, регистрации авиабилетов и 
+						| паспортного контроля.
+					p
+						| Для пассажиров любой авиакомпании с билетами любого класса возможно приобретение 
+						| разового посещения. Для этого необходимо пройти в зал и оплатить услугу у 
+						| администратора.		
+				.section__col 
+					p
+						| Стоимость разового посещения — <strong>2500 руб.</strong> с человека, для детей 
+						| от 5 лет до 12 лет — 50% от тарифа для взрослого пассажира. 
+					p 
+						| При задержке рейса свыше 3 часов взимается дополнительная плата в размере 
+						| 800 Pуб. с человека за каждый последующий час.
+			.section__services
+				+services('', '_green')
+			.section__footer
+				+gallery('section__gallery _green')
+
+

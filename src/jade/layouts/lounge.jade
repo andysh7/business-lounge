@@ -1,0 +1,15 @@
+doctype
+html(lang="ru")
+	head
+		include ../_mixins
+		include ../partial/head
+	body.page
+		.page__outer
+			.page__header
+				+header('_lounge')
+			.page__content
+				block content
+			.page__footer
+				.page__wrapper
+					+footer
+		script(src="./js/main.js")

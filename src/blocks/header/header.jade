@@ -1,12 +1,33 @@
-mixin header()
-	.header
-		.header__wrapper.page__wrapper
-			+logo('header__logo')
-			+menu('header__menu')
-			+heading('header__heading', 'С нами вы как дома', 'Бизнес-залы в Шереметьево: +7 (495) <strong>981-0909</strong>')
-			+lounge-nav('header__nav')
-		.header__background
-			video.header__video(width='100%', poster='/images/posters/', preload='auto', autoplay='true', loop='loop')
-				source(src='/images/posters/video.mov', type='video/webm')
-				source(src='/images/posters/video.mov', type='video/mp4')
-			.header__poster(data-image="/images/posters/1.jpg")
+mixin header(className)
+	if (className == '_main')
+		.header(onclick='return {"header": {}}').js-widget
+			.header__wrapper.page__wrapper
+				+logo('header__logo')
+				+menu('header__menu')
+				+heading('header__heading', 'С нами вы как дома', 'Бизнес-залы в Шереметьево: +7 (495) <strong>981-0909</strong>')
+				+lounge-nav('header__nav')
+			.header__background
+				video.header__video(poster='./images/posters/children_wide.jpg', preload='metadata', autoplay='true', loop='loop')
+					source(src='./images/posters/video.webm', type='video/webm')
+					source(src='./images/posters/video.mov', type='video/mp4')
+				.header__slider
+					img.header__photo(src="/images/posters/children_wide.jpg")
+					img.header__photo(src="/images/posters/children_wide.jpg")
+	else if (className == '_lounge')
+		.header(onclick='return {"header": {}}').js-widget
+			.header__wrapper.page__wrapper
+				+logo('header__logo')
+				+menu('header__menu')
+				+heading('header__heading', 'Classic Lounge', 'Бизнес-залы в Шереметьево: +7 (495) <strong>981-0909</strong>')
+				+lounge-nav('header__nav')
+			.header__background
+				.header__slider
+					img.header__photo(src="/images/photos/3.jpg")
+					img.header__photo(src="/images/photos/4.jpg")
+					img.header__photo(src="/images/photos/5.jpg")
+					img.header__photo(src="/images/photos/6.jpg")
+	else if (className == '_mini')
+		.header._mini
+				.header__wrapper.page__wrapper
+					+logo('header__logo _mini')
+					+menu('header__menu _mini')

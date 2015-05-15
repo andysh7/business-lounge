@@ -1,0 +1,41 @@
+mixin services(className, colorClass)
+	.services(class=className + ' ' + colorClass, onclick='return {"services": {}}').js-widget
+		.services__row
+			.services__item
+				img.services__item-icon(src="./images/services/info" + colorClass + ".png", width="50", height="50") 
+				span.services__item-label информационное обеспечение
+			.services__item
+				img.services__item-icon(src="./images/services/wifi" + colorClass + ".png", width="50", height="50") 
+				span.services__item-label услуги беспроводного интернета Wi -Fi
+			.services__item
+				img.services__item-icon(src="./images/services/bar" + colorClass + ".png", width="50", height="50") 
+				span.services__item-label бар
+		.services__row
+			.services__item
+				img.services__item-icon(src="./images/services/phone" + colorClass + ".png", width="50", height="50") 
+				span.services__item-label услуги телефонной связи (для звонков по Москве)
+			.services__item
+				img.services__item-icon(src="./images/services/computer" + colorClass + ".png", width="50", height="50") 
+				span.services__item-label компьютер <br/> с доступом в интернет
+			.services__item
+				img.services__item-icon(src="./images/services/food" + colorClass + ".png", width="50", height="50") 
+				span.services__item-label шведский стол
+		.services__row
+			.services__item
+				img.services__item-icon(src="./images/services/printer" + colorClass + ".png", width="50", height="50") 
+				span.services__item-label ксерокс, факс
+			.services__item
+				img.services__item-icon(src="./images/services/press" + colorClass + ".png", width="50", height="50") 
+				span.services__item-label телевизор и пресса
+			.services__item
+				img.services__item-icon(src="./images/services/smoke" + colorClass + ".png", width="50", height="50") 
+				span.services__item-label курительная комната
+
+
+
+
+
+
+
+
+

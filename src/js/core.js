@@ -26,7 +26,6 @@
         $.publish = function (eventName, data) {
             pubStack.push({eventName: eventName, data: data});
         };
-
         $.each($context.find('.js-widget'), function () {
             var $this = $(this),
                 config = this.onclick ? this.onclick() : {};
