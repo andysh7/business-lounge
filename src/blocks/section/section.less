@@ -156,11 +156,24 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background-color: #7F7F7F;
-			background: rgba(127, 127, 127, 0.4);
-			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-				filter: alpha(opacity=40);
+			background-color: #369;
+			background: rgba(51, 102, 153, 0.9);
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+				filter: alpha(opacity=90);
+			// background-color: #7F7F7F;
+			// background: rgba(127, 127, 127, 0.4);
+			// -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+			// 	filter: alpha(opacity=40);
 			z-index: 1;
+		}
+
+		&._no_video {
+			&:before {
+				background-color: #369;
+				background: rgba(51, 102, 153, 0.9);
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+					filter: alpha(opacity=90);
+			}
 		}
 	}
 

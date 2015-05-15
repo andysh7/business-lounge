@@ -18,6 +18,7 @@
             // если мобилка - скрываем блок с видео
             if (isMobile.any) {
                 this.$video.hide();
+                this.element.addClass('_no_video');
             }
 
             // плавно показываем блок

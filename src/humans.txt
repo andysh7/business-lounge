@@ -2,6 +2,7 @@
 	Front-end Developer: Andrey Shulga
 	Contact: andrey [at] shulga.pro
 	Location: Moscow, Russia
+	Url: http://frontenders.pro
 
 /* SITE */
 	Last update: 15/05/2014
