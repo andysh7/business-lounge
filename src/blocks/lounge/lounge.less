@@ -50,6 +50,8 @@
 		width: 188px;
 		height: 42px;
 		border-bottom: 8px solid #fff;
+		position: relative;
+		z-index: 2;
 
 		&._green:hover {
 			border-color: #00CC00;
@@ -67,4 +69,13 @@
 			border-color: #FF6600;
 		}
 	}
+
+	&__link-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	} 
 }

@@ -1,5 +1,6 @@
 mixin services(className, colorClass)
 	.services(class=className + ' ' + colorClass, onclick='return {"services": {}}').js-widget
+		.services__overlay
 		.services__row
 			.services__item
 				img.services__item-icon(src="./images/services/info" + colorClass + ".png", width="50", height="50") 
